@@ -1,30 +1,107 @@
-body, html {
-    height: 100%;
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #c4e7c4; 
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
 }
 
-.container {
+.logo-container {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px; 
 }
 
-input[type="text"] {
+.logo-text {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffffff; 
+    margin-bottom: 10px; 
+}
+
+.fas.fa-umbrella {
+    font-size: 56px; 
+    color: #f3c623; 
+}
+
+.slogan-text {
+    font-size: 24px;
+    color: #999999; 
+    margin-top: 15px;
+}
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: calc(100% - 22px);
     padding: 8px;
-    margin: 10px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 button {
-    padding: 8px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
     border: none;
-    border-radius: 5px;
-    background-color: #4CAF50;
-    color: white;
+    border-radius: 4px;
     cursor: pointer;
 }
 
-#weatherInfo {
+button:hover {
+    background-color: #45a049;
+}
+
+#forecast {
     margin-top: 20px;
+}
+
+#forecastTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#forecastTable th, #forecastTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#forecastTable th {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+#forecastTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#forecastTable tbody tr:hover {
+    background-color: #ddd;
+}
+.forecastTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.forecastTable th, .forecastTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.forecastTable th {
+    background-color: #f2f2f2;
 }
